@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<h1 id="title">Gaming Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+</head>
+
+<body>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name-label" id="name-label">Name <input id="name" type="text" required
+                    placeholder="Enter your name" /></label>
+            <label for="email-label" id="email-label">Email <input id="email" type="email" required
+                    placeholder="Enter your Email" /></label>
+            <label for="number-label" id="number-label">Age (optional)<input id="number" type="number" required
+                    placeholder="Age" min="10" max="99" /></label>
+        </fieldset>
+        <!-- Dropdown -->
+        <fieldset>
+            <label for="referrer">Where do you often play games?</label>
+            <select id="dropdown" name="referrer">
+                <option value="">Select current device</option>
+                <option value="1">Smartphone</option>
+                <option value="2">PC/Laptop</option>
+                <option value="3">Tablet</option>
+                <option value="4">Other</option>
+            </select>
+        </fieldset>
+        <!-- Radio Button -->
+        <fieldset>
+            <legend>
+                Do you often play the game on the device you chose before?
+            </legend>
+            <label for="first-option"><input id="first-option" type="radio" name="option-type" class="inline" checked
+                    value="1" />Definitely</label>
+            <label for="second-option"><input id="second-option" type="radio" name="option-type" class="inline"
+                    value="2" />Maybe</label>
+            <label for="third-option"><input id="third-option" type="radio" name="option-type" class="inline"
+                    value="3" /> No</label>
+        </fieldset>
+        <!-- checkbox -->
+        <fieldset>
+            <legend>
+                In the following please select a game that you often play
+            </legend>
+
+            <label for="league-of-legends"><input class="inline" id="league-of-legends" type="checkbox"
+                    value="1" />League Of Legends</label>
+
+            <label for="mobile-legends"><input class="inline" id="mobile-legends" type="checkbox" value="2" />Mobile
+                Legends</label>
+
+            <label for="pubg"><input class="inline" id="pubg" type="checkbox" value="3" />PUBG</label>
+
+            <label for="minecraft"><input class="inline" id="minecraft" type="checkbox" value="4" />Minecraft</label>
+
+            <label for="other-game"><input class="inline" id="other-game" type="checkbox" value="4" />Other</label>
+
+            <br><br>
+            <!-- textarea -->
+            <label for="reason">Give a reason why you play that game?</label>
+            <textarea id="reason" name="reason" rows="3" cols="30" placeholder="Type your reason here..."></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
